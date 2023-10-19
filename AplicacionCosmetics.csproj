@@ -81,6 +81,24 @@
     <Compile Include="C_Presentacion\Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="C_Presentacion\Form_CRUD_Cliente_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Presentacion\Form_CRUD_Cliente_Nuevo.Designer.cs">
+      <DependentUpon>Form_CRUD_Cliente_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Presentacion\Form_Crud_Prob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Presentacion\Form_Crud_Prob.Designer.cs">
+      <DependentUpon>Form_Crud_Prob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Presentacion\Form_CRUD_Produc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Presentacion\Form_CRUD_Produc.Designer.cs">
+      <DependentUpon>Form_CRUD_Produc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="C_Presentacion\Form1.resx">
@@ -97,6 +115,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="C_Presentacion\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Presentacion\Form_CRUD_Cliente_Nuevo.resx">
+      <DependentUpon>Form_CRUD_Cliente_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Presentacion\Form_Crud_Prob.resx">
+      <DependentUpon>Form_Crud_Prob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Presentacion\Form_CRUD_Produc.resx">
+      <DependentUpon>Form_CRUD_Produc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

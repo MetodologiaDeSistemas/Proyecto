@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AccesoLogin
+namespace AccesoLogin.C_Presentacion
 {
-    public partial class Form2 : Form
+    public partial class Form_CRUD_Produc : Form
     {
-        public Form2()
+        public Form_CRUD_Produc()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

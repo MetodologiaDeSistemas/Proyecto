@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AccesoLogin.C_Presentacion;
 
 namespace AccesoLogin
 {
@@ -57,23 +58,23 @@ namespace AccesoLogin
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            /*
+                        C_Datos.Conexion Oconexion = new C_Datos.Conexion();
+                        Oconexion.EstablecerConexion();*/
+            DataGridViewRow file = new DataGridViewRow();
+            file.CreateCells(dgvLista);
 
-            C_Datos.Conexion Oconexion = new C_Datos.Conexion();
-            Oconexion.EstablecerConexion();
-            /*DataGridViewRow file = new DataGridViewRow();
-             file.CreateCells(dgvLista);
+            file.Cells[0].Value = lblCodigo.Text;
+            file.Cells[1].Value = lblNombre.Text;
+            file.Cells[2].Value = lblPreci.Text;
+            file.Cells[3].Value = txtCantidad.Text;
+            file.Cells[4].Value = (float.Parse(lblPreci.Text) * float.Parse(txtCantidad.Text)).ToString();
 
-             file.Cells[0].Value = lblCodigo.Text;
-             file.Cells[1].Value = lblNombre.Text;
-             file.Cells[2].Value = lblPreci.Text;
-             file.Cells[3].Value = txtCantidad.Text;
-             file.Cells[4].Value = (float.Parse(lblPreci.Text) * float.Parse(txtCantidad.Text)).ToString();
+            dgvLista.Rows.Add(file);
 
-             dgvLista.Rows.Add(file);
+            lblCodigo.Text = lblNombre.Text = lblPreci.Text = txtCantidad.Text = "";
 
-             lblCodigo.Text = lblNombre.Text = lblPreci.Text = txtCantidad.Text = "";
-
-             ObtenerTotal();*/
+            ObtenerTotal();
 
         }
 
@@ -107,15 +108,10 @@ namespace AccesoLogin
                 }
 
             }
-
             catch { }
             ObtenerTotal();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtEfectivo_TextChanged(object sender, EventArgs e)
         {

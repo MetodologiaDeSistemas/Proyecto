@@ -1,4 +1,4 @@
-﻿namespace AccesoLogin.C_Presentacion
+﻿namespace AccesoLogin
 {
     partial class Form1
     {

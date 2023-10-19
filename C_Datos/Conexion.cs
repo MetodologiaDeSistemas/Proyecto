@@ -20,7 +20,7 @@ namespace AccesoLogin.C_Datos
         static string puerto = "3306";
 
         string cadenaConexion = "server=" + servidor + ";" + "port=" + puerto + ";" + "user id=" + usuario + ";" + "password=" + password + ";" + "database=" + bd + ";";
-    
+
         public MySqlConnection EstablecerConexion()
         {
             try
@@ -34,6 +34,7 @@ namespace AccesoLogin.C_Datos
             catch (MySqlException ex) {
                 MessageBox.Show(ex.ToString());
             }
+            return conex;
         }
     }
 }
